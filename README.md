@@ -1,2 +1,8 @@
-# CSUA-Hackathon-2016
-Repo for CSUA Hackathon 2016
+# Miracle
+Thanks for stopping by! 
+
+For this CSUA hackathon our team wanted to make a platform to support humanitarian efforts around the world. Traditional donation platforms list hundreds of organizations to donate to -- many of which all support the same cause. These platforms also usually lack donation allocation information (that is, how much of each dollar is actually reaching the people in need). This puts the vetting process on the donor who already has little incentive to give away money. 
+Our platform, Miracle, focuses on causes and not individual organizations. Each week our users are presented with one cause, for example “Hurricane Matthew Relief in Haiti”, that they can choose to donate to. We take care of sifting through the many organizations claiming to help Hurricane Matthew relief in Haiti and figure out which one is actually making the most impact on the ground. We do the vetting process for donors, allowing them to focus on the issues they care about rather having to make sure their dollars are actually going to the people in need. 	We also allow for the option to partner with a corporate sponsor to promote awareness of a cause. Users can simply share our donation page on social media and for each share the sponsor will donate one meal (average of fourteen cents) to the cause. To make it worth the fourteen cents, sponsors would get a shout-out in the social media post. It’s a win-win for everybody and we believe that that, is a Miracle.
+
+# Built with
+This project was built with HTML/CSS/Javascript, implements Google Maps API and uses a Firebase backend. 
