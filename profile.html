@@ -1,22 +1,84 @@
-<head>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Profile</title>
-    <meta name="viewport" content="width=device-width">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>Profile</title>
+	    <meta name="viewport" content="width=device-width">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="css/profile.css">
+		<link rel="stylesheet" href="css/profile.css">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="js/profile.js"></script>
-</head>
-<body>
-	<!-- Your code here -->
-</body>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<script src="https://www.google.com/jsapi"></script>
+		<script src="js/profile.js"></script>
+	</head>
+	<body>
+		<!-- Navigation -->
+			<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+					<div class="container">
+							<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+											<i class="fa fa-bars"></i>
+									</button>
+									<a class="navbar-brand page-scroll" href="#page-top">
+											<span class="light">Miracle</span>
+									</a>
+							</div>
+
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+									<ul class="nav navbar-nav">
+											<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+											<li class="hidden">
+													<a href="#page-top"></a>
+											</li>
+											<li>
+													<a class="page-scroll" href="#experience">Today</a>
+											</li>
+											<li>
+													<a class="page-scroll" href="#download">My Impact</a>
+											</li>
+									</ul>
+							</div>
+							<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.container -->
+				</nav>
+		<!-- Intro Header -->
+			<header class="intro">
+					<div class="intro-body">
+							<div class="container">
+									<div class="row">
+											<div class="col-md-6" style="text-align: right">
+													<h1 class="headings">$78</h1>
+													<p1 class="p1">donated</p1>
+												</div>
+											<div class="col-md-1" style="text-align: left">
+													<h1 class="headings">3</h1>
+													<p1 class="p1">projects</p1>
+												</div>
+									</div>
+									<div class="row">
+											<div class="col-md-12 amount">
+													<p class="p2">$<b>42</b> to <b>Hurricane Relief</b> for <b>Haiti</b></p>
+													<p class="p2">$<b>12</b> to <b>Malaria Nets</b> for <b>Sub-Saharan Africa</b></p>
+													<p class="p2">$<b>23</b> to <b>Childhood Malnutrition Prevention</b> for <b>Developing Countries</b></p>
+											</div>
+									</div>
+									<br />
+									<div id = "map" class="chart_container">
+											<div class="chart_div"></div>
+									</div>
+							</div>
+					</div>
+			</header>
+	</body>
+</html>
