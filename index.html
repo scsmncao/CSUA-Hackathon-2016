@@ -1,22 +1,95 @@
-<head>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Miracle</title>
-    <meta name="viewport" content="width=device-width">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>Miracle</title>
+	    <meta name="viewport" content="width=device-width">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+		<!-- Navigation -->
+	    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+	        <div class="container">
+	            <div class="navbar-header">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+	                    <i class="fa fa-bars"></i>
+	                </button>
+	                <a class="navbar-brand page-scroll" href="#page-top">
+	                    <span class="light">Miracle</span>
+	                </a>
+	            </div>
+
+	            <!-- Collect the nav links, forms, and other content for toggling -->
+	            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+	                <ul class="nav navbar-nav">
+	                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+	                    <li class="hidden">
+	                        <a href="#page-top"></a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#experience">Today</a>
+	                    </li>
+	                    <li>
+	                        <a class="page-scroll" href="#download">My Impact</a>
+	                    </li>
+	                </ul>
+	            </div>
+	            <!-- /.navbar-collapse -->
+	        </div>
+	        <!-- /.container -->
+	    </nav>
+		<!-- Intro Header -->
+	    <header class="intro">
+	        <div class="intro-body">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-md-8 col-md-offset-2">
+	                        <h1 class="brand-heading">Hurricane Relief</h1>
+	                        <h1 class="brand-heading" style="font-size: 28pt">for</h1>
+	                        <h1 class="brand-heading">Haiti</h1>
+	                        <a href="#experience" class="btn btn-circle page-scroll">
+	                            <i class="fa fa-angle-double-down animated"></i>
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </header>
+	    <!-- About Section -->
+    	<section id="information" class="container content-section text-center">
+    		<div class="row">
+            <div class="col-lg-6">
+                <iframe width="600" height="315" src="https://www.youtube.com/embed/kkEPJgp3ePg" frameborder="0" allowfullscreen></iframe>
+                <h1>Hurricane Matthew for Haiti</h1>
+    	</section>
+	</body>
+
+	<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-database.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyBKHnU4N7M3iWfuCCOzgSrLnW934z5Yugg",
+	    authDomain: "miracle-705a8.firebaseapp.com",
+	    databaseURL: "https://miracle-705a8.firebaseio.com",
+	    storageBucket: "miracle-705a8.appspot.com",
+	    messagingSenderId: "538719766644"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/index.js"></script>
-</head>
-<body>
-	<!-- Your code here -->
-</body>
+</html>
