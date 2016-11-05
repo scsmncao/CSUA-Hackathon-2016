@@ -1,3 +1,7 @@
+.container {
+	width: 95%;
+}
+
 .headings{
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 125px;
@@ -231,4 +235,8 @@
 
 .content-section {
     padding-top: 25px;
+}
+
+.chart_div {
+	margin-bottom: 40px;
 }

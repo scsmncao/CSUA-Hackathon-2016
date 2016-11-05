@@ -197,26 +197,33 @@
 }
 
 .donation-amount {
+	margin-top: 30px;
+	padding: 10px;
+	background-color: #EAEAEA;
 	text-align:center;
 }
 
 .donation-box {
 	height: 100px;
 	font-size: 50pt;
-	width: 250px;
+	width: 300px;
 	cursor:auto;
 	margin: 0 auto;
+	font-weight: bold;
+	text-align: right;
 }
 
 .donation-button {
 	border: 1px solid #228B22;
-	width: 150px;
+	width: 300px;
 	margin: 30px auto;
-	height: 50px;
-	line-height: 47px;
+	height: 75px;
+	line-height: 75px;
 	text-align: center;
 	transition: .5s;
 	color: #FFFFFF;
+	font-size: 20pt;
+	font-weight: bold;
 	background-color: #228B22;
 }
 
@@ -229,6 +236,12 @@
 
 .confirmation {
 	text-align: center;
+}
+
+.charity-description {
+	font-size: 12pt;
+	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
 .amount-donated {

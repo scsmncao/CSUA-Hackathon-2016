@@ -31,7 +31,17 @@ $("a").mouseup(function(){
 
 $( document ).ready(function() {
 
-	$('.impact-number').text('1' + ' dollar = ' + 25 + ' meals');
+	$('.impact-number').html('<b>$5</b> <br> provides <b>meals</b> for <br><b>' + Math.round(5/.04/4) + ' families.</b>');
+
+
+	for (var i = 0; i < 25/250; i++) {
+		var span = document.createElement("span");
+		var img = document.createElement("img");
+		img.src = "images/ricebowl.png";
+		img.height = 30;
+		span.appendChild(img);
+  		$('.rice-bowls').append(span);
+  	}
 
 	var provider = new firebase.auth.FacebookAuthProvider();
 	provider.addScope('user_friends, public_profile, email');
@@ -79,6 +89,10 @@ $( document ).ready(function() {
   	$('.cause-description').text(snapshot.val());
   })
 
+  database.ref('feature/charity-description/').on('value', function(snapshot) {
+  	$('.charity-description').text(snapshot.val());
+  })
+
   $('.donation-box').keyup(function (e) {
 
   	var amount = 1
@@ -87,14 +101,31 @@ $( document ).ready(function() {
   		var donatedAmount = amount/.04;
   		console.log("here");
 
-  		$('.impact-number').text(amount + ' dollars = ' + donatedAmount + ' meals');
+  		$('.impact-number').html('<b>$' + amount + '</b><br> provides <b>meals</b> for <br><b>' + Math.round(donatedAmount/4) + ' families.</b>');
 
   	}
   	else {
   		var donatedAmount = amount/.04;
 
-  		$('.impact-number').text(amount + ' dollar =  ' + donatedAmount + ' meals');
+  		$('.impact-number').html('<b>$' + amount + '</b><br> provides <b>meals</b> for <br><b>' + Math.round(donatedAmount/4) + ' families.</b>');
   	}
+
+  	$('.rice-bowls').empty();
+
+	console.log(donatedAmount/10);
+
+	numBowls = donatedAmount/1000;
+
+
+	for (var i = 0; i < donatedAmount/250; i++) {
+		var span = document.createElement("span");
+		var img = document.createElement("img");
+		img.src = "images/ricebowl.png";
+		img.height = 30;
+		span.appendChild(img);
+  		$('.rice-bowls').append(span);
+  	}
+
   });
 
   $('.facebook-login').click(function() {
