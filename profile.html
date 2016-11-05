@@ -17,7 +17,11 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+		<!-- Google Maps JavaScript API -->
 		<script src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript"></script>
+
 		<script src="js/profile.js"></script>
 	</head>
 	<body>
@@ -56,29 +60,41 @@
 			<header class="intro">
 					<div class="intro-body">
 							<div class="container">
+									<!-- Total Donation & Total Projected Donated To -->
 									<div class="row">
 											<div class="col-md-6" style="text-align: right">
 													<h1 class="headings">$78</h1>
 													<p1 class="p1">donated</p1>
 												</div>
 											<div class="col-md-1" style="text-align: left">
-													<h1 class="headings">3</h1>
+													<h1 class="headings">03</h1>
 													<p1 class="p1">projects</p1>
 												</div>
 									</div>
+									<br />
+									<!-- History of Donations -->
 									<div class="row">
-											<div class="col-md-12 amount">
+											<div class="col-md-4" style="text-align: right">
+													<span class="glyphicon glyphicon-grain glyphicon-large"></span>
+											</div>
+											<div class="col-md-8">
 													<p class="p2">$<b>42</b> to <b>Hurricane Relief</b> for <b>Haiti</b></p>
+													<p class="p2">$<b>23</b> to <b>Childhood Malnutrition Prevention</b> for <b>Ethiopia</b></p>
 													<p class="p2">$<b>12</b> to <b>Malaria Nets</b> for <b>Sub-Saharan Africa</b></p>
-													<p class="p2">$<b>23</b> to <b>Childhood Malnutrition Prevention</b> for <b>Developing Countries</b></p>
 											</div>
 									</div>
-									<br />
-									<div id = "map" class="chart_container">
-											<div class="chart_div"></div>
+									<!-- Full History of Donations -->
+									<div class="row">
+											<div class="col-md-12">
+												<span class="glyphicon glyphicon-chevron-down glyphicon-medium"></span>
+											</div>
+											<br /><br /><br / />
+											<!-- Google GeoMap of Regions Donated To -->
+											<center><div class="chart_div" style="width: 750px; height: 375px;"></div></center>
 									</div>
 							</div>
 					</div>
+					<!-- /.header -->
 			</header>
 	</body>
 </html>
