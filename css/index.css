@@ -1,3 +1,7 @@
+.container {
+	width: 95%;
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -72,7 +76,7 @@
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 300px 0;
     text-align: center;
     color: #fff;
     background: linear-gradient(
@@ -87,6 +91,7 @@
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
+    padding-top: 200px;
 }
 
 .intro .intro-body .brand-heading {
@@ -115,7 +120,7 @@
 .btn-circle {
     width: 70px;
     height: 70px;
-    margin-top: 15px;
+    bottom: 0;
     padding: 13px 16px;
     border: 2px solid #fff;
     border-radius: 35px;
@@ -188,4 +193,161 @@
 
 .content-section {
     padding-top: 25px;
+    text-align: left;
+}
+
+.donation-amount {
+	text-align:center;
+}
+
+.donation-box {
+	height: 100px;
+	font-size: 50pt;
+	width: 250px;
+	cursor:auto;
+	margin: 0 auto;
+}
+
+.donation-button {
+	border: 1px solid #228B22;
+	width: 150px;
+	margin: 30px auto;
+	height: 50px;
+	line-height: 47px;
+	text-align: center;
+	transition: .5s;
+	color: #FFFFFF;
+	background-color: #228B22;
+}
+
+.donation-button:hover {
+	cursor: pointer;
+	background-color: #FFFFFF;
+	color: #228B22;
+	transition: .5s;
+}
+
+.confirmation {
+	text-align: center;
+}
+
+.amount-donated {
+	font-size: 40pt;
+}
+
+.donated-impact {
+	font-size: 23pt;
+}
+
+.free-sponsor {
+	margin-top: 30px;
+	font-size: 25px;
+}
+
+.cause-description {
+	font-size: 12pt;
+}
+
+.facebook-login {
+	border: 1px solid #3b5998;
+	width: 200px;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+	margin: 30px auto;
+	height: 50px;
+	line-height: 47px;
+	background-color: #3b5998;
+}
+
+.facebook-login:hover {
+	cursor: pointer;
+}
+
+.counter {
+	margin-top: 100px;
+	font-size: 20pt;
+}
+
+.counter-header {
+	font-size: 14pt;
+	margin-bottom: 90px;
+}
+
+.long-title {
+	margin-top: 20px;
+	text-align: left;
+	font-size: 24pt;
+	font-weight: bold;
+}
+
+.friends {
+	text-align: center;
+}
+
+.friends-pics-indiv {
+	margin-right: 30px;
+}
+
+.friends img {
+	border-radius: 65px;
+}
+
+.donate-amount {
+	text-align: center;
+	margin: 10px 10px 10px 5px;
+	font-size: 20pt;
+}
+
+/* CSS for Credit Card Payment form */
+.panel-default {
+	width: 430px;
+	height: 370px;
+	margin: 150px auto;
+}
+
+.modal {
+	padding-right: 0px !important;
+}
+
+
+.credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+}
+.credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+.credit-card-box label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box .payment-errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box label {
+    display: block;
+}
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+    display: table;
+}
+.credit-card-box .display-tr {
+    display: table-row;
+}
+.credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+/* Just looks nicer */
+.credit-card-box .panel-heading img {
+    min-width: 180px;
 }

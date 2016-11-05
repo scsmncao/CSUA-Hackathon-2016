@@ -33,26 +33,35 @@
 	                        <a href="#page-top"></a>
 	                    </li>
 	                    <li>
-	                        <a class="page-scroll" href="#experience">Today</a>
+	                        <a class="page-scroll" href="#experience" style="border-bottom: 2px solid #FFFFFF">Today</a>
 	                    </li>
 	                    <li>
 	                        <a class="page-scroll" href="#download">My Impact</a>
 	                    </li>
+
+<!-- 	                    <li>
+	                        <a class="page-scroll" data-toggle="modal" href="#signin">Sign In</a>
+	                    </li> -->
 	                </ul>
 	            </div>
 	            <!-- /.navbar-collapse -->
 	        </div>
 	        <!-- /.container -->
 	    </nav>
+
+	    <!-- Modal -->
+
 		<!-- Intro Header -->
 	    <header class="intro">
 	        <div class="intro-body">
 	            <div class="container">
 	                <div class="row">
 	                    <div class="col-md-8 col-md-offset-2">
-	                        <h1 class="brand-heading">Hurricane Relief</h1>
-	                        <h1 class="brand-heading" style="font-size: 28pt">for</h1>
-	                        <h1 class="brand-heading">Haiti</h1>
+	                        <h1 class="brand-heading upper-title">Hurricane Relief</h1>
+	                        <h1 class="brand-heading middle-title" style="font-size: 28pt">for</h1>
+	                        <h1 class="brand-heading bottom-title">Haiti</h1>
+	                        <div class="counter"></div>
+	                        <div class="counter-header">people have donated</div>
 	                        <a href="#experience" class="btn btn-circle page-scroll">
 	                            <i class="fa fa-angle-double-down animated"></i>
 	                        </a>
@@ -64,16 +73,143 @@
 	    <!-- About Section -->
     	<section id="information" class="container content-section text-center">
     		<div class="row">
-            <div class="col-lg-6">
-                <iframe width="600" height="315" src="https://www.youtube.com/embed/kkEPJgp3ePg" frameborder="0" allowfullscreen></iframe>
-                <h1>Hurricane Matthew for Haiti</h1>
+            <div class="col-lg-7">
+                <iframe id="video" width="750" height="420" frameborder="0" allowfullscreen></iframe>
+                <div class="long-title">
+                </div>
+                <div class="cause-description">
+                </div>
+
+                <hr width="400px">
+            </div>
+            <div class="col-lg-4">
+            	<div class="friends">
+            		<h4>Friends that support this cause:</h4>
+            		<div class="friends-pics">
+            		</div>
+            	</div>
+            	<div class="donation-amount">
+            		<h1 class="impact-number"></h1>
+            		<input type="text" value="1" class="input-large donation-box" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="4">
+    				<div data-toggle="modal" href="#signin" class="donation-button">Donate</div>
+            	</div>
+            </div>
     	</section>
+    	<!-- CREDIT CARD FORM STARTS HERE -->
+            <div id="payment" class="panel panel-default credit-card-box modal fade">
+                <div class="panel-heading display-table" >
+                    <div class="row display-tr" >
+                        <h3 class="panel-title display-td" >Payment Details</h3>
+                        <div class="display-td">                            
+                            <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="panel-body">
+                    <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="cardNumber">CARD NUMBER</label>
+                                    <div class="input-group">
+                                        <input 
+                                            type="tel"
+                                            class="form-control"
+                                            name="cardNumber"
+                                            placeholder="Valid Card Number"
+                                            autocomplete="cc-number"
+                                            maxlength="16"
+                                            required autofocus
+                                        />
+                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                    <input 
+                                        type="tel" 
+                                        class="form-control" 
+                                        name="cardExpiry"
+                                        placeholder="MM / YY"
+                                        autocomplete="cc-exp"
+                                        required 
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="form-group">
+                                    <label for="cardCVC">CV CODE</label>
+                                    <input 
+                                        type="tel" 
+                                        class="form-control"
+                                        name="cardCVC"
+                                        placeholder="CVC"
+                                        autocomplete="cc-csc"
+                                        maxlength="3" 
+                                        required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                        	<div class="col-xs-12 donate-amount">
+
+                        	</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button class="donate btn btn-success btn-lg btn-block" type="button">Donate</button>
+                            </div>
+                        </div>
+                        <div class="row" style="display:none;">
+                            <div class="col-xs-12">
+                                <p class="payment-errors"></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>            
+            <!-- CREDIT CARD FORM ENDS HERE -->
+            <!-- Modal -->
+			<div id="thank-you" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Thank you for donating!</h4>
+			      </div>
+			      <div class="modal-body confirmation">
+			      	<div class="amount-donated">
+			      	</div>
+			      	<div class="donated-impact">
+			      	</div>
+			        <div class="free-sponsor">
+			        	Free $1?
+			        </div>
+			        <div class="share-tags">
+
+			        </div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+
+			  </div>
+			</div>
 	</body>
 
 	<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-database.js"></script>
+	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 	<script>
 	  // Initialize Firebase
 	  var config = {
